@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.5s ease;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  animation: fadeInDown 1.2s ease-out;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  text-shadow: 0 0 1px rgba(0, 255, 204, 0.08);
+  animation: pulse 3s infinite ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #00cccc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease-out;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #66ffe0;
+  text-shadow: 0 0 1px rgba(102, 255, 224, 0.05);
+}
+
+h3 {
+  margin-top: 30px;
+  color: #33cccc;
+  transition: color 0.3s ease;
+}
+
+p, li, details {
+  color: #cccccc;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+  animation: fadeIn 1.2s ease-in;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #00b3b3;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  animation: fadeIn 1s ease;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #1a1a1a;
+  color: #00ffff;
+}
+
+td {
+  background-color: #222;
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+  color: #888;
+  animation: fadeInUp 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { text-shadow: 0 0 1px rgba(0, 255, 204, 0.08); }
+  50% { text-shadow: 0 0 4px rgba(0, 255, 204, 0.12); }
+  100% { text-shadow: 0 0 1px rgba(0, 255, 204, 0.08); }
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #00ffcc;
+  text-decoration: underline;
+}
+
+.fade-slide {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1.5s ease-out forwards;
+}
